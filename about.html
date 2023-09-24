@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Parul University Reponsive Webpage</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <span><i class="fa-solid fa-phone"></i> +91 9173010672</span>
+
+        <ul>
+          <li><a href="https://github.com/the-PrafulDesai"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/the-praful-desai/"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://dribbble.com/praful01032002"><i class="fa-brands fa-square-dribbble"></i></a></li>
+          <li><a href="https://www.behance.net/theprafuldesai"><i class="fa-brands fa-square-behance"></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="navbar">
+        <div class="logo">
+          <a href=""><img src="sources/pulogo.png" alt="Logo"></a>
+        </div>
+        <div class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="academics">Academics</a></li>
+          <li><a href="course">Courses</a></li>
+          <li><a href="admissions">Admissions</a></li>
+          <li><a href="campus">Campus Life</a></li>          
+          <li><a href="placement">Placements</a></li>          
+          <li><a href="research">Research & Innovations</a></li>          
+          </div>
+        <a href="#" class="action_btn" id="show-login">Admission Open</a>
+
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
+            <form id="form" action="/">
+              <h2>Enquiry Form</h2>
+              <div class="form-element">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Name" required>
+              </div>
+              <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Valid Email-ID" required>
+              </div>
+              <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+              </div>
+              <div class="form-element">
+                <label for="phonenumber">Phone Number</label>
+                <input type="number" id="phonenumber" placeholder="Enter Phone Number" required>
+              </div>
+              <div class="form-element">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div> 
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+          <li><a href="about">About Us</a></li>
+          <li><a href="academics">Academics</a></li>
+          <li><a href="course">Courses</a></li>
+          <li><a href="admissions">Admissions</a></li>
+          <li><a href="campus">Campus Life</a></li>          
+          <li><a href="placement">Placements</a></li>          
+          <li><a href="research">Research & Innovations</a></li>       
+          <li><a href="#" class="action_btn" id="show-login">Admission Open</a></li>
+      </div>
+    </header>
+
+
+    <main2>
+      <img src="sources/Section3.png" alt="Life at PU">
+      <img src="sources/section4.png" alt="Parul University">
+    </main2>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+      
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+ 
+        toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+      }
+
+      document.querySelector("#show-login").addEventListener("click",function(){
+        document.querySelector(".popup").classList.add("active");
+      });
+
+      document.querySelector(".popup .close-btn").addEventListener("click",function(){
+        document.querySelector(".popup").classList.remove("active");
+      });
+    </script>
+
+    <footer>
+      <div class="container">
+        <div class="sec aboutus">
+          <h2>About Me <div class="underline"><span></span></div></h2>
+          <p>"I'm Praful Desai, a web developer with a keen eye for user-friendly digital experiences 
+            and a commitment to growth."</p>
+          <ul class="sci">
+            <li><a href="https://www.linkedin.com/in/the-praful-desai/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://dribbble.com/praful01032002"><i class="fa-brands fa-square-dribbble"></i></a></li>
+            <li><a href="https://www.behance.net/theprafuldesai"><i class="fa-brands fa-square-behance"></i></a></li>
+            <li><a href="https://github.com/the-PrafulDesai"><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>Support <div class="underline"><span></span></div></h2>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>Admission <div class="underline"><span></span></div></h2>
+        <ul>
+          <li><a href="#">Enquiry</a></li>
+          <li><a href="#">Course</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Curricular Activities</a></li>
+        </ul>
+      </div>
+      <div class="sec contact">
+        <h2>Contact Us <div class="underline"><span></span></div></h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span><p><a href="tel:+919173010672">+91 9173010672</a></p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span><p><a href="mailto:the.prafuldesai@gmail.com">the.prafuldesai@gmail.com </a></p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span><p><a href="#">+91 9173010672</a></p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="copyrightText">
+      <p>Copyright &copy; 2023; All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
