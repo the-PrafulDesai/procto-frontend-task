@@ -1,4 +1,4 @@
-![Thumbnail](https://github.com/the-PrafulDesai/procto-frontend-task/assets/108045971/31aca21f-a64c-4960-a429-e369d6433529)
+![Thumbnail](https://github.com/the-PrafulDesai/procto-frontend-task/assets/108045971/75907dcb-d4c1-451f-bb71-9f7fd7681412)
 
 ## Procto Frontend Development Task
 I have completed the Procto frontend development task by taking inspiration from the Parul University website. The task required the creation of a simple webpage with the following components: a header, navigation bar, main content area, and a footer. Additionally, I applied CSS styling to make the webpage visually appealing and ensured that it is responsive.
