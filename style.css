@@ -403,37 +403,6 @@ main2 img{
   }
 }
 
-.underline{
-  width: 100%;
-  height: 3.5px;
-  background: #fff;
-  border-radius: 3px;
-  position: absolute;
-  top: 25px;
-  left: 0;
-  overflow: hidden;
-}
-
-.underline span{
-  width: 25px;
-  height: 100%;
-  background: red;
-  border-radius: 3px;
-  position: absolute;
-  top: 1.5px;
-  left: 10px;
-  animation: moving 2s linear infinite;
-}
-
-@keyframes moving{
-  0%{
-    left: -20px;
-  }
-  100%{
-    left: 100%;
-  }
-}
-
 @media (max-width: 768px) {
   footer .container{
     width: 100%;
